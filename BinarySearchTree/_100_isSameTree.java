@@ -8,7 +8,7 @@ public class _100_isSameTree {
         if(p==null||q==null){
             return p==null&&q==null;
         }
-        //记得判断节点值是否相等
+        //记得判断节点值是否相等,以及这种递归入口的表达方式
         return isSameTree(p.left,q.left)&&isSameTree(p.right,q.right)&&p.val==q.val;
     }
 }

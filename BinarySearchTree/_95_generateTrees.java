@@ -15,11 +15,9 @@ public class _95_generateTrees {
     public List<TreeNode> generateTree(int begin, int end){
         //存储结果: ans保存了begin至end的所有可能的BST根节点
         List<TreeNode> ans = new ArrayList<TreeNode>();
-
         //递归出口
         if (begin>end) {ans.add(null); return ans;}
         if (begin==end) {ans.add(new TreeNode(begin));return ans;}
-
         //递归入口
         for (int node_i=begin;node_i<=end;node_i++){
             //获取所有可能形状的左子树根（BST中root左侧的节点值全部小于root）

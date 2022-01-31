@@ -8,6 +8,8 @@ import java.util.List;
  * 输入：root = [1,2,3,null,5]
  * 输出：["1->2->5","1->3"]
  *
+ * 回溯思想
+ *
  * 耗时：10min
  * */
 public class _257_binaryTreePaths {

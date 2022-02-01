@@ -8,6 +8,7 @@ import java.util.List;
  * 叶子节点 是指没有子节点的节点。
  *
  * 思路：深度优先搜索，或者使用递归，但是直接想递归有点点无从下手，参照112题可以使用递归，那此处还是用DP靠谱,257的回溯方法也可以尝试
+ * 测试下git版本
  *
  * */
 public class _113_pathSum {
@@ -15,13 +16,14 @@ public class _113_pathSum {
         //参照257方法使用回溯
         List<List<Integer>> lists=new LinkedList<>();
 
-        //最小子问题
+        //边界判断
         if(root==null) {
             return lists;
         }
         if(root.left==null&&root.right==null&&root.val!=targetSum){
             return lists;
         }
+        //最小子问题
         if(root.left==null&&root.right==null&&root.val==targetSum){
             List<Integer> list=new LinkedList<>();
             list.add(root.val);
@@ -30,7 +32,7 @@ public class _113_pathSum {
         }
 
 
-        //进行回溯
+        //向上进行回溯
         List<List<Integer>> lists_left=pathSum(root.left,targetSum-root.val);
         List<List<Integer>> lists_right=pathSum(root.right,targetSum-root.val);
 

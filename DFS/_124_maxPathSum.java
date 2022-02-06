@@ -17,8 +17,6 @@ public class _124_maxPathSum {
 
     public int maxPathSum(TreeNode root) {
         subMaxPath(root);
-        Object o=null;
-        ThreadLocal t;
         return max_sum;
     }
     public int subMaxPath(TreeNode root){

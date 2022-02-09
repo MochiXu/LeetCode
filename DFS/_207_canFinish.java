@@ -55,9 +55,9 @@ public class _207_canFinish {
             //未访问过
             courseStatus.put(course, 0);
             for (int i = 0; i < length; i++) {
-                if (prerequisites[i][0] == course) {
+                if (prerequisites[i][1] == course) {
                     //深度优先搜索邻接点
-                    dfs(prerequisites[i][1], prerequisites);
+                    dfs(prerequisites[i][0], prerequisites);
                 }
             }
             //深度优先搜索完毕之后，相当于回溯到了此节点，那么入栈并标记状态

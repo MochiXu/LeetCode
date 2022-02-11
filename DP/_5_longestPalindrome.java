@@ -10,6 +10,7 @@ import java.util.LinkedList;
  * 解释："aba" 同样是符合题意的答案。
  *
  * 思路：DP想不通，如果使用栈的话，复杂度将会非常高，而且不容易计算
+ *      这里的解决方案就是，逐个的扫描，以每个扫描的元素为中心去判断回文串的长度
  * */
 public class _5_longestPalindrome {
     public String longestPalindrome(String s) {

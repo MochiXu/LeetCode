@@ -47,7 +47,6 @@ package NewCoder.Easy;
         有3号=5号>7号>4号
         由于3号和5号成绩相等  且id 5>3
         所以输出5,3,7,4
-
 */
 
 import java.util.*;

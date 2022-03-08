@@ -1,4 +1,4 @@
-package onLine.Shopee;
+package OtherPractice.Shopee;
 
 public class Solution {
     /**

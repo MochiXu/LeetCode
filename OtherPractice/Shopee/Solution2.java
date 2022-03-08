@@ -1,4 +1,4 @@
-package onLine.Shopee;
+package OtherPractice.Shopee;
 //给定两个数字 (x, y)，允许以下两种计算：
 //
 //1.同时对两个数加1， 即 (x, y) -> (x+1, y+1)

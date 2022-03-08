@@ -1,4 +1,4 @@
-package onLine.Shopee;
+package OtherPractice.Shopee;
 
 //最大乘积子数组
 public class Solution1 {

@@ -1,4 +1,4 @@
-package OtherPractice;
+package OtherPractice.Tools;
 
 import java.util.*;
 
